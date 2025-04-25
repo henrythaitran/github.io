@@ -1,33 +1,56 @@
 <!DOCTYPE html>
- <html lang="en">
- 	<head>
- 		<meta charset="UTF-8">
- 		<title>My Homepage!</title>
- 		<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
- 	</head>
- 	<body>
- 		<h1>Welcome to my homepage!</h1>
- 		<p>Look at my cool links and especially my awesome <a href="itis3135/">ITIS 3135 Site!</a></p>
- 	</body>
-    <footer>
-        <a href="https://webpages.charlotte.edu/htran56/">Charlotte.edu</a> ||
-     <a href="https://github.com/henrythaitran">Github</a> ||
-     <a href="https://henrythaitran.github.io/github.io/">Github.io</a> ||
-     <a href="itis3135/">ITIS 3135</a> ||
-     <a href="https://www.linkedin.com/in/henry-thai-tran/">LinkedIn</a>
-    </footer>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage!</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
+        body {
+            margin: 0;
+            padding-bottom: 50px; /* Prevent footer overlap */
+            font-family: Arial, sans-serif;
+        }
         footer {
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
             background-color: #f8f9fa;
+            padding: 10px 0;
         }
-
         .footer-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .footer-links li a {
+            text-decoration: none;
             font-size: 16px;
             color: #6c757d;
         }
+        .footer-links li a:hover {
+            color: #007bff;
+        }
     </style>
+</head>
+<body>
+    <main>
+        <h1>Welcome to my homepage!</h1>
+        <p>Look at my cool links and especially my awesome <a href="itis3135/">ITIS 3135 Site!</a></p>
+    </main>
+    <footer>
+        <nav>
+            <ul class="footer-links">
+                <li><a href="https://webpages.charlotte.edu/htran56/">Charlotte.edu</a></li>
+                <li><a href="https://github.com/henrythaitran">Github</a></li>
+                <li><a href="https://henrythaitran.github.io/github.io/">Github.io</a></li>
+                <li><a href="itis3135/">ITIS 3135</a></li>
+                <li><a href="https://www.linkedin.com/in/henry-thai-tran/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
 </html>
