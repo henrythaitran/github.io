@@ -123,29 +123,27 @@ nav a:hover {
     color: white;
 }
 
-/* Tablet (768px and below) */
 @media screen and (max-width: 768px) {
     main {
         width: 90%;
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation links */
+        flex-direction: column; 
     }
 }
 
-/* Mobile (480px and below) */
 @media screen and (max-width: 480px) {
     main {
         width: 95%;
     }
 
     h1 {
-        font-size: 1.5em; /* Scales down headers */
+        font-size: 1.5em; 
     }
 
     nav {
-        display: block; /* Ensures easy navigation */
+        display: block; 
     }
 
     nav ul {
@@ -158,13 +156,13 @@ nav a:hover {
         margin: 5px 0;
     }
 }
-/* Large Screens (Above 1200px) */
+
 @media screen and (min-width: 1200px) {
     main {
-        max-width: 1400px; /* Allow slightly more width on large screens */
+        max-width: 1400px; 
     }
 
     body {
-        font-size: 18px; /* Improve readability on big screens */
+        font-size: 18px;
     }
 }
