@@ -1,0 +1,170 @@
+main {
+    width: 85%;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+
+body {
+    text-align: center;
+    font-family: monospace;
+    background-color: darkgray;
+    color: black;
+}
+
+
+a {
+    color: crimson;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+img {
+    width: 40%;
+    height: 60%;
+}
+
+.wireframe-img {
+    max-width: 100%;             
+    width: auto;                 
+    height: auto;                
+    display: block;
+    margin: 0 auto;
+    image-rendering: auto;       
+    max-height: 385px;           
+  }
+  
+
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
+
+
+li {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 3px solid #707070;
+    border-radius: 10px;
+    background-color: #d3d3d3;
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+nav {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    width: 100%;
+}
+
+
+.separator {
+    font-size: 1em;
+    line-height: 1;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+
+
+.second-nav {
+    display: flex;
+    gap: 10px;
+    padding: 6px 12px;
+    background-color: transparent;
+}
+
+
+.second-nav a {
+    color: #230C0F;
+}
+
+
+.second-nav .spacer {
+    font-size: 1em;
+    line-height: 1;
+    vertical-align: middle;
+    opacity: 0.7;
+}
+
+
+nav a {
+    color: crimson;
+    font-weight: normal;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+nav a:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* Tablet (768px and below) */
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+    }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+    main {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.5em; /* Scales down headers */
+    }
+
+    nav {
+        display: block; /* Ensures easy navigation */
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+/* Large Screens (Above 1200px) */
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1400px; /* Allow slightly more width on large screens */
+    }
+
+    body {
+        font-size: 18px; /* Improve readability on big screens */
+    }
+}
