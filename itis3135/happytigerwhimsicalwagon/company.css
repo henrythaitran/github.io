@@ -1,0 +1,79 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffeb99 0%, #ffb347 100%); /* Vibrant tiger-stripe gradient */
+    color: #3c2f2f; /* Rich chocolate brown for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff6f61; /* Playful coral-tiger hue */
+    padding: 15px;
+    text-align: center;
+    border-bottom: 4px solid #ffb347; /* Tiger-orange for contrast */
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3c2f2f;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff8e1; /* Creamy tiger-belly white */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff6f61; /* Coral tiger roar for headlines */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ff6f61; /* Playful coral-tiger hue */
+    padding: 10px;
+    text-align: center;
+    border-top: 4px solid #ffb347; /* Tiger-orange */
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #3c2f2f;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff6f61; /* Coral tiger pop */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #ffe066; /* Tiger-yellow sparkle */
+}
