@@ -27,8 +27,8 @@ a:hover {
 
 
 img {
-    width: 40%;
-    height: 60%;
+    width: auto;
+    height: auto;
 }
 
 .wireframe-img {
@@ -38,7 +38,7 @@ img {
     display: block;
     margin: 0 auto;
     image-rendering: auto;       
-    max-height: 385px;           
+    max-height: 675px;           
   }
   
 
@@ -60,11 +60,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 25px 15px;
     border: 3px solid #5A5A5A;
     border-radius: 10px;
     background-color: #D8C3A5;
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
 }
 
@@ -88,7 +88,7 @@ nav {
 }
 
 
-.second-nav {
+.bottom-nav {
     display: flex;
     gap: 10px;
     padding: 6px 12px;
@@ -96,12 +96,12 @@ nav {
 }
 
 
-.second-nav a {
+.bottom-nav a {
     color: #230C0F;
 }
 
 
-.second-nav .spacer {
+.bottom-nav .spacer {
     font-size: 1em;
     line-height: 1;
     vertical-align: middle;
@@ -137,14 +137,18 @@ nav a:hover {
     main {
         width: 95%;
     }
-
     h1 {
         font-size: 1.5em; 
     }
-
     nav {
         display: block; 
     }
+    nav a, .separator {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+}
 
     nav ul {
         padding: 0;
@@ -155,7 +159,7 @@ nav a:hover {
         display: block;
         margin: 5px 0;
     }
-}
+
 
 @media screen and (min-width: 1200px) {
     main {
