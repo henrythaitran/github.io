@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slideshow Gallery</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/default.css" />
+  <link rel="stylesheet" href="styles/slideshow.css" />
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main>
+    <h2>Slideshow Gallery - Henry Tran</h2>
+    <p>Each image represents a letter in my full name. Click the thumbnails or arrows to navigate.</p>
+    <div class="container">
+      <div class="mySlides"><div class="numbertext">1 / 9</div><img src="images/hen.png" width="800" height="400" alt="H - Hen" /></div>
+      <div class="mySlides"><div class="numbertext">2 / 9</div><img src="images/elephant.png" width="800" height="400" alt="E - Elephant" /></div>
+      <div class="mySlides"><div class="numbertext">3 / 9</div><img src="images/nachos.png" width="800" height="400" alt="N - Nachos" /></div>
+      <div class="mySlides"><div class="numbertext">4 / 9</div><img src="images/rabbit.png" width="800" height="400" alt="R - Rabbit" /></div>
+      <div class="mySlides"><div class="numbertext">5 / 9</div><img src="images/yacht.png" width="800" height="400" alt="Y - Yacht" /></div>
+      <div class="mySlides"><div class="numbertext">6 / 9</div><img src="images/table.png" width="800" height="400" alt="T - Table" /></div>
+      <div class="mySlides"><div class="numbertext">7 / 9</div><img src="images/ring.png" width="800" height="400" alt="R - Ring" /></div>
+      <div class="mySlides"><div class="numbertext">8 / 9</div><img src="images/apple.png" width="800" height="400" alt="A - Apple" /></div>
+      <div class="mySlides"><div class="numbertext">9 / 9</div><img src="images/nickel.png" width="800" height="400" alt="N - Nickel" /></div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+      <div class="row">
+        <div class="column"><img class="demo cursor" src="images/hen.png" width="79" height="60" onclick="currentSlide(1)" alt="H - Hen" /></div>
+        <div class="column"><img class="demo cursor" src="images/elephant.png" width="79" height="60" onclick="currentSlide(2)" alt="E - Elephant" /></div>
+        <div class="column"><img class="demo cursor" src="images/nachos.png" width="79" height="60" onclick="currentSlide(3)" alt="N - Nachos" /></div>
+        <div class="column"><img class="demo cursor" src="images/rabbit.png" width="79" height="60" onclick="currentSlide(4)" alt="R - Rabbit" /></div>
+        <div class="column"><img class="demo cursor" src="images/yacht.png" width="79" height="60" onclick="currentSlide(5)" alt="Y - Yacht" /></div>
+        <div class="column"><img class="demo cursor" src="images/table.png" width="79" height="60" onclick="currentSlide(6)" alt="T - Table" /></div>
+        <div class="column"><img class="demo cursor" src="images/ring.png" width="79" height="60" onclick="currentSlide(7)" alt="R - Ring" /></div>
+        <div class="column"><img class="demo cursor" src="images/apple.png" width="79" height="60" onclick="currentSlide(8)" alt="A - Apple" /></div>
+        <div class="column"><img class="demo cursor" src="images/nickel.png" width="79" height="60" onclick="currentSlide(9)" alt="N - Nickel" /></div>
+      </div>
+    </div>
+    <h3>AI Prompts Used</h3>
+    <ul>
+        <li>Give me a picture of a Hen</li>
+        <li>Give me a picture of a Elephant</li>
+        <li>Give me a picture of a Nachos</li>
+        <li>Give me a picture of a Rabbit</li>
+        <li>Give me a picture of a Yacht</li>
+        <li>Give me a picture of a Table</li>
+        <li>Give me a picture of a Ring</li>
+        <li>Give me a picture of a Apple</li>
+    </ul>
+    <p><strong>Generated with:</strong> Grok and ChatGPT</p>
+    <h3>Notes</h3>
+    <p>
+      Built using W3Schools Slideshow Gallery example.<br />
+      Images were AI-generated.<br />
+      This is my own work. No code was copied and pasted.<br />
+      Signed, Henry Tran
+    </p>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTMLInclude.js"></script>
+  <script src="scripts/slideshow.js"></script>
+</body>
+</html>
