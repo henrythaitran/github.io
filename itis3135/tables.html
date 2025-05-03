@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        h3 {
+            margin-top: 32px;
+        }
+        table {
+            width: 80%;
+            margin: 2px auto;
+            border-collapse: collapse;
+        }
+        figure table {
+            width: 90%;
+        }
+        tr {
+            text-align: left;
+        }
+        figure th {
+            width: 50%;
+        }
+        th, td {
+            padding: 5px 10px;
+            border: 1px solid #1c2526;
+        }
+        figure thead {
+            background-color: #2a2e3b;
+            color: #e0e7ff;
+        }
+        figure tbody tr:nth-child(odd) {
+            background-color: #d1d9e6;
+        }
+        figure tbody tr:nth-child(even) {
+            background-color: #a8b1c0;
+        }
+        td[rowspan] {
+            background-color: #3c4658;
+            color: #e0e7ff;
+        }
+        tr th[colspan] {
+            background-color: #3c4658;
+            color: #e0e7ff;
+        }
+        figure tfoot {
+            background-color: #3c4658;
+            color: #e0e7ff;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>HTML Tables</h2>
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>Tony Stark - tony.stark@starkindustries.com</li>
+                <li>Bruce Wayne - bruce.wayne@wayneenterprises.com</li>
+                <li>Peter Parker - peter.parker@dailybugle.com</li>
+                <li>Clark Kent - clark.kent@dailyplanet.com</li>
+                <li>Natasha Romanoff - natasha.romanoff@shield.gov</li>
+                <li>Diana Prince - diana.prince@themyscira.org</li>
+                <li>Steve Rogers - steve.rogers@avengers.org</li>
+                <li>Barry Allen - barry.allen@ccpd.gov</li>
+            </ol>
+        
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Tony Stark</td><td>tony.stark@starkindustries.com</td><td>12</td></tr>
+                    <tr><td>Bruce Wayne</td><td>bruce.wayne@wayneenterprises.com</td><td>7</td></tr>
+                    <tr><td>Peter Parker</td><td>peter.parker@dailybugle.com</td><td>10</td></tr>
+                    <tr><td>Clark Kent</td><td>clark.kent@dailyplanet.com</td><td>3</td></tr>
+                    <tr><td>Natasha Romanoff</td><td>natasha.romanoff@shield.gov</td><td>15</td></tr>
+                    <tr><td>Diana Prince</td><td>diana.prince@themyscira.org</td><td>8</td></tr>
+                    <tr><td>Steve Rogers</td><td>steve.rogers@avengers.org</td><td>25</td></tr>
+                    <tr><td>Barry Allen</td><td>barry.allen@ccpd.gov</td><td>5</td></tr>
+                </tbody>
+            </table>
+        
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+                <figcaption>Employee Information by Role and Monthly Salary</figcaption>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="category" scope="col">Department</th>
+                            <th id="name" scope="col">Name</th>
+                            <th id="email" scope="col">Email</th>
+                            <th id="years" scope="col">Years</th>
+                            <th id="salary" scope="col">Monthly Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" headers="category">Leadership</td>
+                            <td headers="category name">Tony Stark</td>
+                            <td headers="category email">tony.stark@starkindustries Ascot.com">tony.stark@starkindustries.com</td>
+                            <td headers="category years">12</td>
+                            <td headers="category salary">$6200</td>
+                        </tr>
+                        <tr>
+                            <td headers="category name">Bruce Wayne</td>
+                            <td headers="category email">bruce.wayne@wayneenterprises.com</td>
+                            <td headers="category years">7</td>
+                            <td headers="category salary">$5800</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" headers="category">Operations</td>
+                            <td headers="category name">Peter Parker</td>
+                            <td headers="category email">peter.parker@dailybugle.com</td>
+                            <td headers="category years">10</td>
+                            <td headers="category salary">$4500</td>
+                        </tr>
+                        <tr>
+                            <td headers="category name">Clark Kent</td>
+                            <td headers="category email">clark.kent@dailyplanet.com</td>
+                            <td headers="category years">3</td>
+                            <td headers="category salary">$3800</td>
+                        </tr>
+                        <tr>
+                            <td headers="category name">Natasha Romanoff</td>
+                            <td headers="category email">natasha.romanoff@shield.gov</td>
+                            <td headers="category years">15</td>
+                            <td headers="category salary">$5100</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" headers="category">Creative</td>
+                            <td headers="category name">Diana Prince</td>
+                            <td headers="category email">diana.prince@themyscira.org</td>
+                            <td headers="category years">8</td>
+                            <td headers="category salary">$4900</td>
+                        </tr>
+                        <tr>
+                            <td headers="category name">Steve Rogers</td>
+                            <td headers="category email">steve.rogers@avengers.org</td>
+                            <td headers="category years">25</td>
+                            <td headers="category salary">$6000</td>
+                        </tr>
+                        <tr>
+                            <td headers="category name">Barry Allen</td>
+                            <td headers="category email">barry.allen@ccpd.gov</td>
+                            <td headers="category years">5</td>
+                            <td headers="category salary">$4700</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th id="total" colspan="3">Total Years of Service</th>
+                            <td headers="total years">85</td>
+                            <td headers="total salary">$41,000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </figure>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>

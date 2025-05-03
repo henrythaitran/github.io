@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BYO Introduction Page</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css" />
+  </head>
+  <body>
+    <header>
+      <div data-include="components/header.html"></div>
+    </header>
+    <main>
+      <div id="formSection">
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, fill out the form below so we can create your own page.</h3>
+        <form id="introForm">
+          <label>Name: <input type="text" id="name" required /></label><br />
+          <label>Mascot: <input type="text" id="mascot" required /></label><br />
+          <label>Image: <input type="file" id="image" accept="image/png, image/jpeg" required /></label><br />
+          <label>Image Caption: <input type="text" id="caption" required /></label><br />
+          <label>Personal Background: <input type="text" id="personal" required /></label><br />
+          <label>Professional Background: <input type="text" id="professional" required /></label><br />
+          <label>Academic Background: <input type="text" id="academic" required /></label><br />
+          <label>Background in Web Development: <input type="text" id="webdev" required /></label><br />
+          <label>Primary Computer Platform: <input type="text" id="platform" required /></label><br />
+          <div id="coursesContainer">
+            <label>Courses currently taking:</label><br />
+            <button type="button" onclick="addCourse()">Add Course</button>
+          </div><br />
+          <label>Funny thing? <input type="text" id="funny" /></label><br />
+          <label>Anything else? <input type="text" id="anything" /></label><br />
+          <label>
+            <input type="checkbox" id="agree" required />
+            I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+          </label><br />
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </form>
+      </div>
+      <div id="result"></div>
+    </main>
+    <footer>
+      <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/survey.js"></script>
+  </body>
+</html>

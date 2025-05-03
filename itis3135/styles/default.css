@@ -119,7 +119,7 @@ nav a {
 
 
 nav a:hover {
-    background-color: gray;
+    background-color: red;
     color: white;
 }
 

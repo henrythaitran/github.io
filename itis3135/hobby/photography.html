@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Hobby</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #eee;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover, nav a.active {
+            background-color: #666;
+        }
+        section {
+            display: none;
+            padding: 20px;
+            background: #333;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+        }
+        #home { display: block; }
+        figure img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        figcaption {
+            font-style: italic;
+            margin-top: 5px;
+        }
+        footer {
+            background: #444;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll("nav a");
+            const sections = document.querySelectorAll("section");
+
+            function showSection(sectionId) {
+                sections.forEach(section => section.style.display = "none");
+                document.getElementById(sectionId).style.display = "block";
+                links.forEach(link => link.classList.remove("active"));
+                document.querySelector(`[data-section="${sectionId}"]`).classList.add("active");
+            }
+
+            links.forEach(link => {
+                link.addEventListener("click", function() {
+                    showSection(this.getAttribute("data-section"));
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Photography Hobby</h1>
+        <nav>
+            <a data-section="home" class="active">Home</a>
+            <a data-section="about">About Me</a>
+            <a data-section="best_times">Best Times</a>
+            <a data-section="locations">Best Locations</a>
+            <a data-section="how">How To</a>
+            <a data-section="why">Why Photography?</a>
+            <a data-section="ai_prompts">AI Prompts</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Photography is the art of capturing light through a lens. It allows us to preserve moments in time.</p>
+            <figure>
+                <img src="images/dslr.webp">
+                <figcaption>A DSLR camera ready for a photoshoot.</figcaption>
+            </figure>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I've been into photography for years, capturing portraits and most importanly memories.</p>
+            <figure>
+                <img src="images/me.jpeg">
+                <figcaption>Me capturing memories with my friends.</figcaption>
+            </figure>
+        </section>
+        <section id="best_times">
+            <h2>Best Times</h2>
+            <p>Golden hour is one of the best times for stunning photographs.</p>
+            <figure>
+                <img src="images/golden_hour.jpg">
+                <figcaption>Golden hour brings warmth and depth to photos.</figcaption>
+            </figure>
+        </section>
+        <section id="locations">
+            <h2>Best Locations</h2>
+            <p>Nature, urban landscapes, and historical sites always offer great photography opportunities.</p>
+            <figure>
+                <img src="images/location.jpg">
+                <figcaption>The Botanical Garden here at UNCC is one of the best spots I have ever taken photos.</figcaption>
+            </figure>
+        </section>
+        <section id="how">
+            <h2>How To</h2>
+            <p>Learn the basics of composition, lighting, and editing for stunning images.</p>
+            <figure>
+                <img src="images/composition.jpg">
+                <figcaption>Using the rule of thirds for balanced composition.</figcaption>
+            </figure>
+        </section>
+        <section id="why">
+            <h2>Why Photography?</h2>
+            <p>Photography is a creative outlet, a way to document life, and a powerful tool.</p>
+            <figure>
+                <img src="images/emotion.jpg">
+                <figcaption>Photography captures emotions and stories.</figcaption>
+            </figure>
+        </section>
+        <section id="ai_prompts">
+            <h2>AI Prompts</h2>
+            <p>Below are the AI prompts used:</p>
+            <ul>
+                <li>"How should I go about building a multi-page Hobby site as a single HTML file?"</li>
+                <li>"Simplify the process you gave me but pretend as if you were explaning it to a 5 year old."</li>
+                <li>"Give me an example of how to use css and/or JavaScript that hides all sections except the one you click."</li>
+                <li>"Break the script down step by step and tell me the function of each line."</li>
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Photography Hobby</p>
+    </footer>
+</body>
+</html>
