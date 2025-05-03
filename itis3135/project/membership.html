@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <title>VSA | About</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="main.js"></script>
+</head>
+<header>
+    <h1>UNC Charlotte's Vietnamese Student Association</h1>
+  </header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gbm.html">GBMs</a></li>
+      <li><a href="membership.html">Memberships</a></li>
+      <li><a href="photo.html">Photos</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2 class="center-text">Become a member of VSA!</h2>
+    <p class="center-text">Fill out the form below to be apart of VSA!</p>
+    <form id="joinForm" class="form-container">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="interest">What are you most excited for in VSA?</label>
+      <textarea id="interest" name="interest" rows="3" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="formConfirmation" class="center-text hidden">
+      <p>Thank you for becoming a member. See you soon!</p>
+    </div>
+  </main>
+  <footer>
+    <p>Page Built by <a href="https://webpages.charlotte.edu/htran56/itis3135/happytigerenterprise/">Happy Tiger Enterprise</a></p>
+  </footer>
+</body>
+</html>

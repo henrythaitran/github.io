@@ -1,0 +1,236 @@
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+/* Header */
+header {
+  background-color: #A8D5BA;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* Navigation */
+nav {
+  background-color: #8CC7A1;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 1em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  display: inline-block;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+/* Main */
+main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+p {
+  line-height: 1.6;
+}
+/* Footer */
+footer {
+  background-color: #A8D5BA;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: auto;
+}
+/* Utility */
+.center-text {
+  text-align: center;
+}
+/* Hero */
+.hero img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  object-fit: cover;
+  border-bottom: 3px solid #8CC7A1;
+  box-sizing: border-box;
+}
+/* Section */
+.intro,
+.highlight {
+  margin-top: 2em;
+  text-align: center;
+}
+/* Events */
+.event-list {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+.event {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+}
+.event-img {
+  max-width: 50%;
+  height: auto;
+  margin-top: 1em;
+  border: 2px solid #8CC7A1;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.toggle-btn {
+  display: block;
+  margin: 0 auto 2em auto;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  background-color: #8CC7A1;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Hidden Utility */
+.hidden {
+  display: none;
+}
+/* Gallery */
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+}
+.slide {
+  display: none;
+  position: relative;
+}
+.slide img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  height: 450px;
+}
+.caption {
+  position: absolute;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1rem;
+  border-radius: 0 0 8px 8px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%);
+  user-select: none;
+  border-radius: 3px;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Thumbnails */
+.thumbnail-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.thumb {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.thumb:hover {
+  transform: scale(1.05);
+  border-color: #8CC7A1;
+}
+.thumb[data-active="true"] {
+  border-color: #8CC7A1;
+}
+/* Form */
+.form-container {
+  max-width: 600px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.form-container label {
+  font-weight: bold;
+}
+.form-container input,
+.form-container textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.form-container button {
+  background-color: #8CC7A1;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background-color: #76b38c;
+}
