@@ -79,8 +79,8 @@ footer {
 .center-text {
   text-align: center;
 }
-/* Hero */
-.hero img {
+/* Logo */
+.logo img {
   display: block;
   width: 50%;
   margin: 0 auto;
@@ -94,7 +94,7 @@ footer {
   margin-top: 2em;
   text-align: center;
 }
-/* Events */
+/* GBMs */
 .event-list {
   max-width: 800px;
   margin: 2em auto;
@@ -128,7 +128,7 @@ footer {
 .hidden {
   display: none;
 }
-/* Gallery */
+/* Photos */
 .slideshow-container {
   position: relative;
   max-width: 800px;
@@ -233,4 +233,10 @@ footer {
 }
 .form-container button:hover {
   background-color: #76b38c;
+}
+/* Style to center the canvas */
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }

@@ -6,6 +6,7 @@
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
   <title>VSA | Home</title>
   <link rel="stylesheet" href="styles.css" />
+   <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
   <script defer src="main.js"></script>
   <style>
     .visually-hidden {
@@ -35,13 +36,19 @@
       </ul>
     </nav>
     <main>
-      <section class="hero">
+      <section class="logo">
         <h2 class="visually-hidden">VSA Banner</h2>
         <img src="vsalogo.png" alt="VSA Banner" />
       </section>
       <section class="intro">
         <h2>Xin chao! Welcome to VSA.</h2>
         <p>We are a cultural, educational, and charitable organization at UNC Charlotte. Our mission is to promote Vietnamese culture and encourage higher education at UNC Charlotte.</p>
+      </section>
+      <section class="interactive center-text">
+        <h2>Interactive Drawing</h2>
+        <p>Move your cursor around the canvas to draw VSA.</p>
+        <div class="canvas-container" id="canvas-container"></div>
+        <button class="toggle-btn" onclick="resetCanvas()">Reset Canvas</button>
       </section>
     </main>
     <footer>

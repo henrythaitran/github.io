@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Declare slideIndex before using it
+    //Slides
     let slideIndex = 1;
     function showSlides(n) {
       const slides = document.getElementsByClassName("slide");
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.currentSlide = function(n) {
       showSlides(slideIndex = n);
     };
-    // Form handling
+    // Form
     const joinForm = document.getElementById("joinForm");
     const confirmation = document.getElementById("formConfirmation");
     if (joinForm && confirmation) {
@@ -36,3 +36,20 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+  //Draw VSA
+  function setup() {
+    let canvas = createCanvas(600, 400);
+    canvas.parent('canvas-container');
+    background(220);
+  }
+  
+  function draw() {
+    fill (140, 199, 161);
+    noStroke();
+    ellipse(mouseX, mouseY, 50, 50);
+  }
+
+  //Reset button
+  function resetCanvas() {
+    background(220); // Reset to initial light gray background
+}
